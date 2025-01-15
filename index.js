@@ -3,9 +3,7 @@ const app = express()
 app.use(express.urlencoded({extended:true}))
 const mongoose = require("mongoose")
 app.set("view engine" , "ejs")
-const PORT = 3000
 const router = require("./routes/user.router.js")
-let URI = "mongodb+srv://oyedejioladipupo10:Dipsycee2007@cluster1.fzxyx.mongodb.net/jumia1_db?retryWrites=true&w=majority&appName=Cluster1"
 
 //setting up the port
 app.listen(PORT , (err) => {
